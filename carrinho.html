@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/carrinho.css">
+    <link rel="shortcut icon" type="imagex/png" href="./assets/images/mouse.svg">
+    <script async src="./assets/js/carrinho.js"></script>
+    
+    <title>VIMA</title>
+</head>
+<body>
+    <header>
+        <a href="home.html"><h1 class="logo">VIMA<span>STORE</span></h1></a>
+        <ul class="navegação">
+            
+            <li><a href="feedback.html">Reviews</a></li>
+            <li><a href="contato.html">Entre em contato</a></li>
+            
+        </ul><!--navbar -->
+
+        <div class="header-icons">
+            <a href="./carrinho.html"><i class='bx bx-cart'></i></a>
+            <a href="./login.html"><i class='bx bx-user'></i></a>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+           
+        </div>
+    </header> 
+    <main>
+        <div class="page-title">Carrinho de Compras</div>
+        <div class="content">
+            <section>
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                            <th>-</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="cart-product">
+                            <td>
+                                <div class="product">
+                                    <img src="https://picsum.photos/100/120" alt="" />
+                                    <div class="info">
+                                        <div class="name">Mouse Gamer Wireless <br>Logitech G PRO</div>
+                                        <div class="category">LIGHTSPEED, RGB LIGHTSYNC</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="product-price">R$120</span>
+                            </td>
+                            <td>
+                                <div class="qty">
+                                    <!-- <button><i class="bx bx-minus"></i></button> -->
+                                    <input type="number" value="1" min="0" class="product-qtd">
+                                    <!-- <button><i class="bx bx-plus"></i></button> -->
+                                </div>
+                            </td>
+                            <td>
+                                <span class="total-tr">R$120</span>
+                            </td>
+                            <td>
+                                <button type="button" class="remove"><i class="bx bx-x"></i></button>
+                            </td>
+                        </tr>
+                     
+                    </tbody>
+                </table>
+            </section>
+            <aside>
+                <div class="box">
+                    <header class="box">Resumo da Compra</header>
+                    <div class="info">
+                        <div><strong>Sub-total</strong><span>R$ 418</span></div>
+                        <div><strong>Frete</strong><span>Gratuito</span></div>
+                        <div>
+                        <button>
+                            Adicionar cupom de desconto
+                            <i class="bx bx-right-arrow-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <footer class="cart-total">
+                    <strong>Total</strong>
+                    <span>R$ 418</span>
+                </footer>
+            </div>
+            <button class="final">Finalizar Compra</button>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

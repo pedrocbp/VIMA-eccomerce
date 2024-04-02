@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+:root{
+    --bg-color:var(--bg-color) #1d2631;
+    --tex-color: #000000;
+    --main-color: #34e7f8;
+    --other-color: #000000;
+    --h1-font: 4rem;
+    --p-font: 1rem;
+}
+
+
+body{
+    background-color:	FFFAFA;
+    color: var(--tex-color);
+    overflow-x: hidden;
+}
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    background-color: #2c2c2c;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: var(--tex-color);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo i{
+    color: var(--main-color);
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.navegação{
+    display: flex;
+    margin-top: 15px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+}
+
+.navegação a{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 0 30px;
+    color: white;
+    text-decoration: none;
+    margin-top: 12%;
+    height: 15px;
+    width: 15px;;
+    justify-content: center;
+}
+
+.navegação li {
+    margin-right: 10px;
+}
+
+.navegação li:last-child {
+    margin-right: 0;
+}
+
+.navegação a {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.navegação a:hover {
+    transform: scale(1.1);
+    color: #34e7f8;
+}
+
+.logo{
+    color: #34e7f8;
+}
+
+.logo span{
+    color: #fff;
+}
+
+#menu{
+    font-size: 35px;
+    color: var(--tex-color);
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.header-icons i{
+    margin-right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: white;
+}
+
+.header-icons i:hover{
+    transform: translateY(-5px);
+    color: #34e7f8
+}
+
+
+.header-icons{
+    display: flex;
+    align-items: center;
+}
+
+
+.section{
+
+    padding: 0 15%;
+}
+
+.home{
+    margin: 30px;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-text h1{
+    font-size: var(--h1-font);
+    line-height: 1.2;
+    right:15%;
+    margin-bottom: 2px;
+}
+
+.home-text h5{
+    color: #00000099;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.home-text h3{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.product-select {
+    margin-left: -18%; 
+}
+
+
+.home-img img{
+    max-width: 100%;
+    width: 28rem;
+    height: auto;
+    margin-left: 25%;
+}
+
+
+.button-hover-background {
+    display: inline-block;
+    padding: 15px 70px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: solid 2px var(--tex-color);
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #000000;
+}
+
+.button-hover-background:hover {
+    background: var(--tex-color);
+    border-color: var(--tex-color);
+    transform: scale(1.1); 
+    color: white;
+}
+
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main li img{
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+
+.row:hover {
+    transform: translateY(-8px);
+
+}
+
+.main .row{
+    background:FFFAFA;
+    height: 90px;
+    width: 90px;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all.55s ease;
+    cursor: pointer;
+}
+
+.main, th, td{
+    border-collapse:collapse;
+        padding: 10px;
+        text-align: left;
+}
+.main .row {
+    display: inline-block; /* Para que as divs se comportem como elementos em linha */
+    border: 1px solid rgb(0, 0, 0); /* Adiciona borda às divs */
+    margin: 5px; /* Adiciona espaço entre as divs */
+}
+
+.main .row img {
+    display: block;
+}
+
+/* tabela de desconto */
+.tabela, th, td{
+    border-collapse:collapse;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: left;
+    border: none;
+}
+.price, regularPrice {
+    margin-top: 20px;
+}
+
+.home-text, h3{
+    margin: 20px;
+}
+
+
+/* Implementando codigo  */
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 5rem 0;
+    font-size: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 980px;
+    margin: 0 auto;
+    grid-gap: 40px;
+}
+
+.card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 40px;
+    box-shadow: 6px 6px 10px #0000002a;
+}
+
+.card .user {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+}
+
+.star {
+    width: 25px;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.container {
+    display: flex;
+}
+
+.contact-form {
+    padding: 20px;
+    margin-right: 20px;
+    order: 1;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    order: 2;
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 50%;
+    background-color: #34e7f8;
+    color: white;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#texto{
+    height: 100px;
+    padding: 15px;
+    font-size: 20px;
+    flex-direction: column ;
+}
+
+/* Estilos padrão */
+/* Seu CSS atual aqui */
+
+/* Estilos para telas de notebook */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para telas de notebook */
+    .home-text h5 {
+        margin-left: 11%; /* Ajustando a margem esquerda para telas de notebook */
+    }
+
+    .product-select {
+        margin-left: -18%; /* Ajustando a margem esquerda para telas de notebook */
+    }
+}
+
+/* Estilos para telas de PC */
+@media screen and (min-width: 1025px) {
+    .home-text h5 {
+        margin-left: 0; /* Resetando a margem para telas de PC */
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 767px) {
+    .home {
+        grid-template-columns: 1fr; /* Alterando para uma coluna em telas de celular */
+    }
+
+    .home-text h5 {
+        margin-left: 0; /* Resetando a margem para telas de celular */
+    }
+
+    .home-img img {
+        margin-top: 20px; /* Ajustando a margem superior para a imagem em telas de celular */
+    }
+}
