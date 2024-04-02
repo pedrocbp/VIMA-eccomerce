@@ -1,11 +1,11 @@
 Unimar - Analise e Desenvolvimento de Sistemas 3°Termo 
 
 Nomes: 
-Matheus Junior dos Santos David - RA 1967152  
-Victor Hugo Notaro Barboza - RA 1970022
-Pedro Miguel Bonini de Cerqueira - RA 1968222
-Gabriel Henrique Canale - RA 1980734
-Maria Eduarda Del boni - RA 1974297
+Matheus Junior dos Santos David - RA 1967152<br>
+Victor Hugo Notaro Barboza - RA 1970022<br>
+Pedro Miguel Bonini de Cerqueira - RA 1968222<br>
+Gabriel Henrique Canale - RA 1980734<br>
+Maria Eduarda Del boni - RA 1974297<br>
 
 
 Tela Inicial - Ecommerce de produtos relacionado a informatica.![image](https://github.com/pedrocbp/VIMA-eccomerce/assets/128000408/a35bd78e-670d-4315-a54c-24d02d7af792) <br></br><br></br>
